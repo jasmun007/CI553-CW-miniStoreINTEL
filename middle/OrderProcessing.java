@@ -14,7 +14,7 @@ import java.util.Map;
 public interface OrderProcessing
 {
                                                    // Used by
-  public void newOrder(Basket bought)              // Cashier
+  public int newOrder(Basket bought)              // Cashier
          throws OrderException;
 
   public int  uniqueNumber()                       // Cashier

@@ -128,4 +128,9 @@ public class CashierView implements Observer
     theInput.requestFocus();               // Focus is here
   }
 
+public void updateBasket(Basket basket) {
+	// TODO Auto-generated method stub
+	
+}
+
 }

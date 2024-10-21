@@ -94,8 +94,9 @@ public class CashierModel extends Observable
 
   /**
    * Buy the product
+ * @return 
    */
-  public void doBuy()
+  public Product doBuy()
   {
     String theAction = "";
     int    amount  = 1;                         //  & quantity
@@ -127,6 +128,7 @@ public class CashierModel extends Observable
     }
     theState = State.process;                   // All Done
     setChanged(); notifyObservers(theAction);
+	return theProduct;
   }
   
   /**
