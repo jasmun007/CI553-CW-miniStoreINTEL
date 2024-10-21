@@ -16,7 +16,7 @@ import java.util.Locale;
 public class Basket extends ArrayList<Product> implements Serializable
 {
   private static final long serialVersionUID = 1;
-  private int    theOrderNum = 0;          // Order number
+  public int    theOrderNum = 0;          // Order number
   
   /**
    * Constructor for a basket which is
@@ -54,7 +54,7 @@ public class Basket extends ArrayList<Product> implements Serializable
    * @return true if successfully adds the product
    */
   // Will be in the Java doc for Basket
-  @Override
+  
   public boolean add( Product pr )
   {                              
     return super.add( pr );     // Call add in ArrayList
